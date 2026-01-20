@@ -1,0 +1,203 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    /* Transicion suave entre modos */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    transition: background-color 0.3s;
+}
+
+/* Posicion relativa para el boton */
+header .container {
+    position: relative;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Secciones */
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+section p, section ul {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    background: #77aaff;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Proyectos */
+.project {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project a {
+    color: #77aaff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contacto */
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #229954;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/*Estilos Modo Oscuro*/
+
+/* Estilo del boton */
+#theme-toggle-btn {
+    position: absolute;
+    top: 35px;
+    right: 0; /* Se alinea a la derecha del .container */
+    background: #f4f4f4;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle-btn:hover {
+    background: #ddd;
+}
+
+/* --- Estilos del Modo Oscuro --- */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+body.dark-mode header {
+    background: #1f1f1f;
+    border-bottom-color: #5588dd; /* Un azul un poco mas suave */
+}
+
+body.dark-mode section h2 {
+    color: #f4f4f4;
+}
+
+body.dark-mode section ul li {
+    background: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode .project {
+    background: #2a2a2a;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .project a {
+    color: #5588dd;
+}
+
+body.dark-mode #contact a {
+    color: #33cc77; /* Un verde mas brillante */
+}
+
+body.dark-mode footer {
+    background: #1f1f1f;
+}
+
+/* Estilo del boton en modo oscuro */
+body.dark-mode #theme-toggle-btn {
+    background: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode #theme-toggle-btn:hover {
+    background: #444;
+}
